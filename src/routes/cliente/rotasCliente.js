@@ -15,7 +15,7 @@ router.post('/criar', async (req, res) => {
     } catch (error) {
         const emailNotUnique = error.parent.sqlState
         if (emailNotUnique) {
-            return res.status(409).json({ message: 'O cliente já existe' })
+            return res.status(409).json({ message: 'O cliente já existe. Por favor, insira um e-mail diferente' })
         }
     }
 });

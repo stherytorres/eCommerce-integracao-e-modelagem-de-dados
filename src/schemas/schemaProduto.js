@@ -13,11 +13,11 @@ const Produto = sequelize.define('produto', {
         unique: 'nome'
     },
     preco: {
-        type: DataTypes.DECIMAL(10, 2),
+        type: DataTypes.DECIMAL(6, 2),
         allowNull: false
     },
     descricao: {
-        type: DataTypes.STRING(200),
+        type: DataTypes.STRING(100),
         allowNull: false
     },
 }, {
@@ -30,6 +30,6 @@ const Produto = sequelize.define('produto', {
     }]
 });
 
-Produto.sync({ alter: true });
+Produto.sync();
 
 module.exports = Produto;

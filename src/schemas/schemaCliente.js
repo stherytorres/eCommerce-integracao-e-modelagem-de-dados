@@ -16,7 +16,7 @@ const Cliente = sequelize.define('cliente', {
         allowNull: false
     },
     email: {
-        type: DataTypes.STRING(64),
+        type: DataTypes.STRING(100),
         allowNull: false,
         unique: 'email'
     },
@@ -30,6 +30,6 @@ const Cliente = sequelize.define('cliente', {
     }]
 });
 
-Cliente.sync({ alter: true });
+Cliente.sync();
 
 module.exports = Cliente;
