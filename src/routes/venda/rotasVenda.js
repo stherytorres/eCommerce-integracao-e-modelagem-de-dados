@@ -14,12 +14,12 @@ router.get('/', async (req, res) => {
 
 router.post('/criar', async (req, res) => {
     try {
-        const { preco, id_cliente } = req.body;
+        const { total, id_cliente } = req.body;
         const cliente = await schemaCliente.findByPk(id_cliente);
         if (!cliente) {
             return res.status(400).json({ message: 'O Cliente não existe' });
         }
-        const venda = await schemaVenda.create({ preco, id_cliente });
+        const venda = await schemaVenda.create({ total, id_cliente });
         return res.status(201).json(venda);
     } catch (error) {
         return res.status(500).json({ message: 'Erro ao criar a venda', error: error.message });
@@ -37,7 +37,7 @@ router.put('/editar/:id', async (req, res) => {
             return res.status(400).json({ message: 'O cliente não existe' });
         }
         venda.id_cliente = req.body.id_cliente
-        venda.preco = req.body.preco
+        venda.total = req.body.total
         await venda.save();
         res.status(200).json(venda);
     } catch (error) {

@@ -8,7 +8,7 @@ const Venda = sequelize.define('venda', {
         primaryKey: true,
         autoIncrement: true
     },
-    preco: {
+    total: {
         type: DataTypes.DECIMAL(6, 2),
         allowNull: false
     },

@@ -14,8 +14,8 @@ router.post('/criar', async (req, res) => {
         res.status(201).json(novoProduto);
     } catch (error) {
         if (error.parent && error.parent.sqlState) {
-        const produtoNotUnique = error.parent.sqlState
-        if (produtoNotUnique) {
+        const produtoNaoUnico = error.parent.sqlState
+        if (produtoNaoUnico) {
             return res.status(409).json({ message: 'O produto já existe' })
         }}
     }
@@ -30,8 +30,8 @@ router.put('/editar/:id', async (req, res) => {
         await produto.update(req.body);
         return res.status(200).json(produto)
     } catch (error) {
-        const produtoNotUnique = error.parent.sqlState
-        if (produtoNotUnique) {
+        const produtoNaoUnico = error.parent.sqlState
+        if (produtoNaoUnico) {
             return res.status(409).json({ message: 'O produto já está cadastrado. Por favor, insira um produto diferente.' })
         }
     }

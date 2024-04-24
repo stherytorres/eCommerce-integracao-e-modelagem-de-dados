@@ -13,8 +13,8 @@ router.post('/criar', async (req, res) => {
         const novoCliente = await schemaCliente.create({ nome, telefone, email });
         res.status(201).json(novoCliente);
     } catch (error) {
-        const emailNotUnique = error.parent.sqlState
-        if (emailNotUnique) {
+        const emailNaoUnico = error.parent.sqlState
+        if (emailNaoUnico) {
             return res.status(409).json({ message: 'O cliente já existe. Por favor, insira um e-mail diferente' })
         }
     }
@@ -29,8 +29,8 @@ router.put('/editar/:id', async (req, res) => {
         await cliente.update(req.body);
         return res.status(200).json(cliente)
     } catch (error) {
-        const emailNotUnique = error.parent.sqlState
-        if (emailNotUnique) {
+        const emailNaoUnico = error.parent.sqlState
+        if (emailNaoUnico) {
             return res.status(409).json({ message: 'O email já está cadastrado. Por favor, insira um email diferente.' })
         }
     }
