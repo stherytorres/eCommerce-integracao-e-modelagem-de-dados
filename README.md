@@ -1,11 +1,11 @@
-# Projeto (em andamento) : E-Commerce - Integração e modelagem de dados
+# Projeto : E-Commerce - Integração e modelagem de dados
 
 ## Descrição: 
-API desenvolvida para uma empresa de E-Commerce  capaz de realizar o cadastro de produtos e registro de vendas,
+API desenvolvida para uma empresa de E-Commerce capaz de realizar o cadastro de produtos e registro de vendas,
 com o objetivo de colocar em prática integração de bancos de dados para armazenar e gerenciar informações, habilidades em modelagem de
 dados e desenvolvimento de APIs. <br>
 
-Como usar: 
+Modelagem de Banco: 
 
 <img  width="50%" src="https://github.com/stheryalves/eCommerce-integracao-e-modelagem-de-dados/assets/134507985/f50cd9bd-7904-4974-8b7d-55e54897be05" >
 
@@ -35,9 +35,10 @@ Dependências: Sequelize, Dotenv, Cors e Nodemon <br>
 * Após a conclusão das instalações, você pode iniciar o servidor de desenvolvimento localmente. Você pode fazer isso executando o comando 'npm run dev'.<br>
 * O servidor de desenvolvimento será iniciado. Se não abrir automaticamente, você pode acessá-lo digitando http://localhost:8080 na barra de endereços do seu navegador.<br>
 
-<!--
-Link da API: [API Biblioteca Online](https://) <br>
--->
+Link da API: [E-Commerce](https://e-commerce-integracao-e-modelagem-de-dados.vercel.app/) <br>
+
+## Hospedagem: <br>
+<img width="5%" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original.svg" />
 
 ## Contato:<br>
 Se você tiver alguma dúvida ou sugestão sobre o Projeto, sinta-se à vontade para entrar em contato:<br>
