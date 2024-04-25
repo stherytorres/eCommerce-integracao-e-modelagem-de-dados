@@ -6,10 +6,10 @@ router.get('', async (req, res) => {
     res.status(200).send(`
       <p>Rotas disponíveis:</p>
       <ul>
-        <li><a href="/produtos">/produto</a></li>
+        <li><a href="/produto">/produto</a></li>
         <li><a href="/estoque">/estoque</a></li>
-        <li><a href="/clientes">/cliente</a></li>
-        <li><a href="/vendas">/venda</a></li>
+        <li><a href="/cliente">/cliente</a></li>
+        <li><a href="/venda">/venda</a></li>
       </ul>
     `);
   } catch (error) {
