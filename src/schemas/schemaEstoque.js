@@ -10,7 +10,7 @@ const Estoque = sequelize.define('estoque', {
     },
     quantidade: {
         type: DataTypes.INTEGER,
-        allowNull: false, //?
+        allowNull: false, 
     },
     id_produto: {
         type: DataTypes.INTEGER,
