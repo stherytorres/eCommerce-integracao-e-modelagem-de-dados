@@ -10,7 +10,6 @@ router.get('', async (req, res) => {
         <li><a href="/estoque">/inventario</a></li>
         <li><a href="/cliente">/cliente</a></li>
         <li><a href="/venda">/venda</a></li>
-        <li><a href="/pedido">/pedido</a></li>
       </ul>
     `);
   } catch (error) {
