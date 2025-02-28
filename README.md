@@ -7,7 +7,7 @@ dados e desenvolvimento de APIs. <br>
 
 Modelagem de Banco: 
 
-<img  width="50%" src="https://github.com/stheryalves/eCommerce-integracao-e-modelagem-de-dados/assets/134507985/f50cd9bd-7904-4974-8b7d-55e54897be05" >
+<img  width="50%" src="https://github.com/user-attachments/assets/0a468237-1eca-42dd-8f5d-9eae7b88e655" >
 
 
 ## Tecnologias utilizadas:
@@ -28,7 +28,7 @@ Dependências: Sequelize, Dotenv, Cors e Nodemon <br>
 * Crie uma pasta no seu computador: 'minha-pasta' <br>
 * Abra 'minha-pasta' no VS Code <br>
 * Abra o terminal no VS Code <br>
-* Clone o repositório: $ git clone https://github.com/stheryalves/eCommerce-integracao-e-modelagem-de-dados.git <br>
+* Clone o repositório: $ git clone https://github.com/stherytorres/eCommerce-integracao-e-modelagem-de-dados.git <br>
 * Execute o comando 'npm install' ou 'npm i'. Isso instalará todas as dependências do projeto listadas no arquivo package.json.<br>
 
 * Instale a framework e as dependências listadas nos pré-requisitos
@@ -43,5 +43,5 @@ Link da API: [E-Commerce](https://e-commerce-integracao-e-modelagem-de-dados.ver
 ## Contato:<br>
 Se você tiver alguma dúvida ou sugestão sobre o Projeto, sinta-se à vontade para entrar em contato:<br>
 
-- Email: sthery.styll@gmail.com<br>
-- LinkedIn: [Perfil no LinkedIn](https://www.linkedin.com/in/sthery-alves-5214ab99/)
+- Email: stor68@proton.me<br>
+- LinkedIn: [Perfil no LinkedIn](https://www.linkedin.com/in/sthery-torres/)
